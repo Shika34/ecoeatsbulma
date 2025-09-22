@@ -10,16 +10,18 @@
 
 <body>
   <header>
-    <section class="hero is-primary is-medium">
+    <div class="columns  is-mobile is-centered">
+  <div class="column is-four-fifths">
+    <section class="hero is-primary is-small">
       <!-- Hero head: will stick at the top -->
 
 
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered">
+        <div class="container has-text-centered ">
           <p class="title">ECO EATS</p>
           <p class="subtitle">Livraison bio à domicile</p>
-          <figure class="image is-128x128">
+          <figure class="image is-128x128 is-inline-block">
             <img class="is-rounded" src="/images/logo.jpg" alt="logo du site" />
           </figure>
         </div>
@@ -30,7 +32,6 @@
         <nav class="tabs">
           <div class="container">
             <ul>
-
               <li><a href="#apropos">A propos</a></li>
               <li><a href="#menu">Menu</a></li>
               <li><a href="#ccm">Comment ça marche</a></li>
@@ -41,12 +42,16 @@
         </nav>
       </div>
     </section>
+  </div>
+    </div>
 
 
 
   </header>
 
   <main>
+    <div class="columns  is-mobile is-centered">
+  <div class="column is-four-fifths">
     <section id="apropos" class="skeleton-block has-text-primary is-size-5 has-text-centered	">
       <p>
       <h2>A propos</h2>
@@ -58,9 +63,13 @@
         pratique au quotidien, avec le sourire en plus.
       </p>
     </section>
+  </div>
+    </div>
 
     <section id="menu">
       <h2 class="title has-text-primary has-text-centered mb-6">Liste de nos plats:</h2>
+      <div class="columns  is-mobile is-centered">
+  <div class="column is-four-fifths">
       <div class="fixed-grid has-4-cols">
 
         <div class="grid">
@@ -95,7 +104,8 @@
             <p class="is-size-4">Poké Bowl Fraîcheur Riz vinaigré, saumon cru mariné, mangue, avocat,
               concombre et graines de sésame. <br>Prix : 12,80 €</p>
           </div>
-
+        </div>
+      </div>
         </div>
       </div>
     </section>
@@ -105,7 +115,7 @@
         <div class="columns is-variable is-4 is-desktop">
           <div class="column">
             <div class="box has-text-centered">
-              <span class="icon is-large has-text-primary">
+              <span class="icon is-large has-text">
               </span>
               <h3 class="title is-5 mt-2">Choisissez vos plats</h3>
               <p>Explorez notre menu et sélectionnez simplement vos plats favoris.</p>
@@ -116,7 +126,7 @@
               <span class="icon is-large has-text">
               </span>
               <h3 class="title is-5 mt-2">Ajoutez au panier</h3>
-              <p>Ajoutez les plats à votre panier ; ajustez les quantités à votre convenance.</p>
+              <p>Ajoutez les plats à votre panier ; ajustez les quantités à votre convenance.</p>
             </div>
           </div>
           <div class="column">
@@ -140,10 +150,12 @@
 
     <section id="contact">
       <h2 class="title has-text-primary has-text-centered mb-6">Pour les questions ou les demandes de devis:</h2>
+      <div class="columns  is-mobile is-centered">
+  <div class="column is-two-fifths">
       <div class="field">
         <label class="label">Nom</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Nom">
+          <input class="input" type="text" placeholder="Nom" >
         </div>
       </div>
 
@@ -160,8 +172,8 @@
 
           <div class="field">
             <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <div class="control">
+              <input class="input" type="email" placeholder="Email input">
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -187,6 +199,8 @@
               <button class="button is-link is-light">Annuler</button>
             </div>
           </div>
+        </div>
+      </div>
     </section>
   </main>
 
