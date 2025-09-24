@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>ECO EATS</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <header>
+    <div class="flex justify-center">
+      <div class="w-4/5">
+        <section class="bg-green-600 text-white py-6 rounded-b-lg shadow-md">
+          <div class="flex flex-col items-center">
+            <p class="text-4xl font-bold mb-2">ECO EATS</p>
+            <p class="text-xl mb-4">Livraison bio à domicile</p>
+            <figure class="inline-block w-32 h-32 mb-4">
+              <img class="rounded-full object-cover w-full h-full" src="/images/logo.jpg" alt="logo du site" />
+            </figure>
+          </div>
+          <nav class="border-t border-green-400 mt-4 pt-2">
+            <ul class="flex justify-center gap-6 text-blue-100">
+              <li><a class="hover:text-white" href="#apropos">A propos</a></li>
+              <li><a class="hover:text-white" href="#menu">Menu</a></li>
+              <li><a class="hover:text-white" href="#ccm">Comment ça marche</a></li>
+              <li><a class="hover:text-white" href="#contact">Contact</a></li>
+              <li><a class="hover:text-white" href="#footer">Bas de page</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="flex justify-center mt-10">
+      <div class="w-4/5">
+        <!-- section a propos -->
+        <section id="apropos" class="bg-white shadow rounded-lg p-8 text-center text-xl text-black mb-10">
+          <h2 class="text-2xl font-bold mb-2">A propos</h2>
+          <p>
+            Notre service de livraison à domicile vous apporte vos produits
+            directement chez vous, en toute simplicité. Rapide, fiable et
+            flexible, il vous permet de recevoir vos courses, repas ou colis sans
+            avoir à vous déplacer. <p class="mt-5">Grâce à une équipe dédiée et des créneaux de
+            livraison adaptés à vos besoins, nous vous garantissons un service
+            pratique au quotidien, avec le sourire en plus.</p>
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- section menu version grid -->
+    <section id="menu">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-6">Liste de nos plats:</h2>
+      <div class="flex justify-center">
+        <div class="w-4/5">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="col-span-1 flex flex-col justify-center">
+              <figure class="w-64 h-64 mx-auto">
+                <img class="rounded-lg object-cover w-full h-full" src="/images/pates.jpg" alt="image de pâtes" />
+              </figure>
+            </div>
+            <div class="col-span-3 bg-green-100 flex items-center p-6 rounded-lg">
+              <p class="text-lg">
+                Pâtes crémeuses au saumon Tagliatelles fraîches nappées d’une sauce crémeuse au saumon fumé, relevées d’aneth.
+                <br>Prix : 13,90 €
+              </p>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center">
+              <figure class="w-64 h-64 mx-auto">
+                <img class="rounded-lg object-cover w-full h-full" src="/images/pizza.jpg" alt="image de la pizza" />
+              </figure>
+            </div>
+            <div class="col-span-3 bg-green-100 flex items-center p-6 rounded-lg">
+              <p class="text-lg">
+                Pizza Méditerranéenne Pâte fine garnie de tomates, mozzarella, olives, poivrons et basilic.<br>Prix : 11,50 €
+              </p>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center">
+              <figure class="w-64 h-64 mx-auto">
+                <img class="rounded-lg object-cover w-full h-full" src="/images/burger.jpg" alt="image du burger" />
+              </figure>
+            </div>
+            <div class="col-span-3 bg-green-100 flex items-center p-6 rounded-lg">
+              <p class="text-lg">
+                Burger Maison Gourmet Steak haché de bœuf, cheddar affiné, sauce maison, tomates fraîches et oignons caramélisés, servi avec frites dorées. <br>Prix : 14,90 €
+              </p>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center">
+              <figure class="w-64 h-64 mx-auto">
+                <img class="rounded-lg object-cover w-full h-full" src="/images/bowl.jpeg" alt="image du bol" />
+              </figure>
+            </div>
+            <div class="col-span-3 bg-green-100 flex items-center p-6 rounded-lg">
+              <p class="text-lg">
+                Poké Bowl Fraîcheur Riz vinaigré, saumon cru mariné, mangue, avocat, concombre et graines de sésame. <br>Prix : 12,80 €
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section comment ça marche avec colonnes et icones -->
+    <section id="ccm" class="py-12">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-6">Comment ça marche ?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+          <span class="text-green-500 text-5xl mb-3"><i class="fas fa-utensils"></i></span>
+          <h3 class="text-xl font-bold mb-2">Choisissez vos plats</h3>
+          <p>Explorez notre menu et sélectionnez simplement vos plats favoris.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+          <span class="text-green-500 text-5xl mb-3"><i class="fas fa-basket-shopping"></i></span>
+          <h3 class="text-xl font-bold mb-2">Ajoutez au panier</h3>
+          <p>Ajoutez les plats à votre panier ; ajustez les quantités à votre convenance.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+          <span class="text-green-500 text-5xl mb-3"><i class="fas fa-credit-card"></i></span>
+          <h3 class="text-xl font-bold mb-2">Passez la commande</h3>
+          <p>Indiquez votre adresse, choisissez le créneau, puis payez en toute sécurité.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+          <span class="text-green-500 text-5xl mb-3"><i class="fas fa-truck"></i></span>
+          <h3 class="text-xl font-bold mb-2">Livraison express</h3>
+          <p>Recevez vos plats chez vous, à l’heure choisie, par un livreur souriant.</p>
+        </div>
+      </div>
+    </section>
+    <!-- section contact avec icones -->
+    <section id="contact" class="py-12">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-6">Pour les questions ou les demandes de devis:</h2>
+      <div class="flex justify-center">
+        <div class="w-2/4 bg-white shadow rounded-lg p-8">
+          <form>
+            <div class="mb-6">
+              <label class="block mb-2 font-bold">Nom</label>
+              <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" type="text" placeholder="Nom">
+            </div>
+            <div class="mb-6">
+              <label class="block mb-2 font-bold">Prenom</label>
+              <div class="relative">
+                <input class="w-full border border-gray-300 rounded px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-green-400" type="text" placeholder="Prenom">
+                <span class="absolute left-2 top-2.5 text-gray-400"><i class="fas fa-user"></i></span>
+                <span class="absolute right-2 top-2.5 text-green-500"><i class="fas fa-check"></i></span>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block mb-2 font-bold">Email</label>
+              <div class="relative">
+                <input class="w-full border border-gray-300 rounded px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-400" type="email" placeholder="Email input">
+                <span class="absolute left-2 top-2.5 text-gray-400"><i class="fas fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block mb-2 font-bold">Message</label>
+              <textarea class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Textarea"></textarea>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">Envoyer</button>
+              <button class="bg-green-100 hover:bg-green-200 text-green-700 font-bold py-2 px-6 rounded">Annuler</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="bg-gray-100 mt-10 py-8">
+    <div class="text-center text-gray-600">
+      <p>&copy; 2024 ECO EATS. Tous droits réservés.</p>
+      <p>
+        Suivez-nous sur
+        <a class="text-green-600 hover:underline" href="https://www.facebook.com/ecoeats">Facebook</a>,
+        <a class="text-green-600 hover:underline" href="https://www.twitter.com/ecoeats">Twitter</a>, et
+        <a class="text-green-600 hover:underline" href="https://www.instagram.com/ecoeats">Instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ECO EATS</title>
+  <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="flex justify-center">
+        <div class="w-4/5">
+  <div class="bg-green-600 shadow rounded-full">Élément 1</div>
+  <div class="bg-green-400 shadow rounded-t-lg">Élément 2</div>
+  <div class="bg-green-200 shadow rounded-b-lg">Élément 3</div>
+</div>
+</div>
+    <div class="grid grid-cols-3">
+        <div></div>     
+        <div class="box-content md:box-border bg-green">
+              <p class="title">ECO EATS</p>
+              <p class="subtitle">Livraison bio à domicile</p>
+      </div>
+      <div></div>
+      <div></div>
+      <div>
+  <figure class="inline-block w-64 h-64">
+    <img class="rounded-full" src="/images/logo.jpg" alt="logo du site" />
+  </figure>
+</div>
+       
+    
+    </div>
+         
+
+          <!-- Hero footer: will stick at the bottom -->
+          <div class="hero-foot">
+            <nav class="tabs">
+              <div class="container">
+                <ul>
+                  <li><a href="#apropos">A propos</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#ccm">Comment ça marche</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#footer">Bas de page</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <main>
+    <div class="columns  is-mobile is-centered">
+      <div class="column is-four-fifths">
+        <!-- section a propos version skeleton -->
+        <section id="apropos" class="skeleton-block has-text-black is-size-5 has-text-centered	">
+          <p>
+          <h2>A propos</h2>
+          <p>Notre service de livraison à domicile vous apporte vos produits
+            directement chez vous, en toute simplicité. Rapide, fiable et
+            flexible, il vous permet de recevoir vos courses, repas ou colis sans
+            avoir à vous déplacer. Grâce à une équipe dédiée et des créneaux de
+            livraison adaptés à vos besoins, nous vous garantissons un service
+            pratique au quotidien, avec le sourire en plus.
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- section menu version tailwind-->
+       <!-- Cards produits -->
+      <div class="container">
+        <h3 class="text-xl font-semibold mb-4">MENU</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="demo-box bg-demo-blue"><img src="/images/pates.jpg" alt="image de pâtes" /></div>
+            <div class="p-4">
+              <h4 class="font-semibold">PATES</h4>
+              <p class="text-gray-600 text-sm">Pâtes crémeuses au saumon Tagliatelles fraîches
+                  nappées d’une sauce crémeuse au saumon fumé, relevées d’aneth.</p>
+              <p class="font-bold text-lg">13,90 €</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="demo-box bg-demo-green"><img src="/images/pizza.jpg" alt="image de la pizza" /></div>
+            <div class="p-4">
+              <h4 class="font-semibold">PIZZA</h4>
+              <p class="text-gray-600 text-sm">Pizza Méditerranéenne Pâte fine garnie de tomates, mozzarella, olives,
+                  poivrons et basilic.</p>
+              <p class="font-bold text-lg">11,50 €</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="demo-box bg-demo-purple"><img src="/images/burger.jpg" alt="image du burger" /></div>
+            <div class="p-4">
+              <h4 class="font-semibold">BURGER</h4>
+              <p class="text-gray-600 text-sm">Burger Maison Gourmet Steak haché de bœuf, cheddar affiné, sauce maison,
+                  tomates fraîches et oignons caramélisés, servi avec frites dorées.</p>
+              <p class="font-bold text-lg">14,90 €</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="demo-box bg-demo-red"><img src="/images/bowl.jpeg" alt="image du bol" /></div>
+            <div class="p-4">
+              <h4 class="font-semibold">POKE BOWL</h4>
+              <p class="text-gray-600 text-sm">Poké Bowl Fraîcheur Riz vinaigré, saumon cru mariné, mangue, avocat,
+                  concombre et graines de sésame.</p>
+              <p class="font-bold text-lg">12,80 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section menu version grid -->
+    <section id="menu">
+      <h2 class="title has-text-primary has-text-centered mb-6">Liste de nos plats:</h2>
+      <div class="columns  is-mobile is-centered">
+        <div class="column is-four-fifths">
+          <div class="fixed-grid has-4-cols">
+
+            <div class="grid">
+              <div class="cell">
+                <figure class="image is-256x256"><img src="/images/pates.jpg" alt="image de pâtes" /></figure>
+              </div>
+              <div class="cell is-col-span-3 has-background-primary-light	is-align-content-center">
+                <p class="is-size-4">Pâtes crémeuses au saumon Tagliatelles fraîches
+                  nappées d’une sauce crémeuse au saumon fumé, relevées d’aneth.
+                  <br>Prix : 13,90 €
+                </p>
+              </div>
+              <div class="cell">
+                <figure class="image is-256x256"><img src="/images/pizza.jpg" alt="image de la pizza" /></figure>
+              </div>
+              <div class="cell is-col-span-3 has-background-primary-light	is-align-content-center">
+                <p class="is-size-4">Pizza Méditerranéenne Pâte fine garnie de tomates, mozzarella, olives,
+                  poivrons et basilic.<br>Prix : 11,50 €</p>
+              </div>
+              <div class="cell">
+                <figure class="image is-256x256"><img src="/images/burger.jpg" alt="image du burger" /></figure>
+              </div>
+              <div class="cell is-col-span-3 has-background-primary-light	is-align-content-center">
+                <p class="is-size-4">Burger Maison Gourmet Steak haché de bœuf, cheddar affiné, sauce maison,
+                  tomates fraîches et oignons caramélisés, servi avec frites dorées. <br>Prix
+                  : 14,90 €</p>
+              </div>
+              <div class="cell">
+                <figure class="image is-256x256"><img src="/images/bowl.jpeg" alt="image du bol" /></figure>
+              </div>
+              <div class="cell is-col-span-3 has-background-primary-light	is-align-content-center">
+                <p class="is-size-4">Poké Bowl Fraîcheur Riz vinaigré, saumon cru mariné, mangue, avocat,
+                  concombre et graines de sésame. <br>Prix : 12,80 €</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- section comment ça marche avec colones et icones -->
+    <section id="ccm" class="section">
+      <h2 class="title has-text-primary has-text-centered mb-6">Comment ça marche ?</h2>
+      <div class="columns is-variable is-4 is-desktop">
+        <div class="column">
+          <div class="box has-text-centered">
+            <span class="icon is-large has-text">
+              <i class="fas fa-utensils fa-2x"></i>
+            </span>
+            <h3 class="title is-5">Choisissez vos plats</h3>
+
+            <p>Explorez notre menu et sélectionnez simplement vos plats favoris.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered">
+            <span class="icon is-large has-text">
+              <i class="fas fa-basket-shopping fa-2x"></i>
+            </span>
+            <h3 class="title is-5">Ajoutez au panier</h3>
+            <p>Ajoutez les plats à votre panier ; ajustez les quantités à votre convenance.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered">
+            <span class="icon is-large has-text">
+              <i class="fas fa-credit-card fa-2x"></i>
+            </span>
+            <h3 class="title is-5">Passez la commande</h3>
+            <p>Indiquez votre adresse, choisissez le créneau, puis payez en toute sécurité.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered">
+            <span class="icon is-large has-text">
+              <i class="fas fa-truck fa-2x"></i>
+            </span>
+            <h3 class="title is-5 mt-2">Livraison express</h3>
+            <p>Recevez vos plats chez vous, à l’heure choisie, par un livreur souriant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- section contact avec icones -->
+    <section id="contact">
+      <h2 class="title has-text-primary has-text-centered mb-6">Pour les questions ou les demandes de devis:</h2>
+      <div class="columns  is-mobile is-centered">
+        <div class="column is-two-fifths">
+          <div class="field">
+            <label class="label">Nom</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Nom">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Prenom</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Prenom">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email input">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Envoyer</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light">Annuler</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </main>
+  <!-- footer avec liens factices -->
+  <footer id="footer" class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 ECO EATS. Tous droits réservés.</p>
+      <p>
+        Suivez-nous sur
+        <a href="https://www.facebook.com/ecoeats">Facebook</a>,
+        <a href="https://www.twitter.com/ecoeats">Twitter</a>, et
+        <a href="https://www.instagram.com/ecoeats">Instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
